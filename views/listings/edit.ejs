@@ -1,0 +1,56 @@
+<% layout("/layouts/boilerplates") %>
+
+<div class="row mt-3 ">
+    <div class="col-8 offset-2">
+
+  
+    <h2>Edit your Listing</h2>
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation">
+        <div class="mb-3">
+            <label for="title" class="from-lable">Title</label>
+            <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control"required >
+            <div class="valid-feedback">Your Title is Good!</div>
+        </div>
+        <br>
+        <div class="mb-3">
+            <label for="description" class="from-lable">Description</label>
+            <textarea name="listing[description]" class="form-control" required><%= listing.description %> </textarea>
+        </div>
+        <div class="invalid-feedback"> please enter short description</div>
+        <br>
+        <div class="mb-3">
+            <label for="image" class="from-lable">Image Link</label>
+            <input name="listing[image.url]" value="<%= listing.image.url %>" type="text" class="form-control" required >
+            <div class="invalid-feedback"> please entre correct url/link</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="mb-3 col-md-4" >
+                <label for="price" class="from-lable">Price</label>
+                <input name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required >
+                <div class="invalid-feedback"> please entre the price</div>
+            </div>
+            <br>
+            
+            <div class="mb-3 col-md-8">
+                <label for="country"class="from-lable">Country</label>
+                <input name="listing[country]" value="<%= listing.country %>" type="text"class="form-control"  required >
+                <div class="invalid-feedback"> please entre the country name</div>
+            </div>
+            <br>
+        </div>
+       
+        <div class="mb-3">
+            <label for="location" class="from-lable">Location</label>
+            <input name="listing[location]" value="<%= listing.location %>" type="text" class="form-control" required >
+            <div class="invalid-feedback"> please entre the location</div>
+        </div>
+       
+            
+        <button class="btn btn-dark edit-btn mb-3"  >Edit</button>
+        
+    </form>
+</div>
+</div>
+<script src="script.js"></script>
+

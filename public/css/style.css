@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height:5rem;
+    background-color: rgb(255, 255, 255);
+}
+.fa-compass{
+   color:#fe424d ;
+   font-size: 2rem;
+
+}
+.nav-link{
+    color:#222222 !important ;
+}
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    
+}
+.f-info-links,.f-info-socials,brand{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+
+
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fbf8f8;
+    align-items: space-evenly;
+
+}
+/*cards*/
+
+.listing-card{
+    border:1rem solid rgb(255, 255, 255) !important;
+    margin-bottom: 2rem;
+
+}
+.card-img-top{
+    border-radius: 0.8rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text{
+    font-weight: 400;
+}
+
+.listing-link{
+
+    text-decoration: none;
+}
+/*card */
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: rgb(33, 30, 30);
+}
+.add-btn{
+background-color: #fe424d !important;
+border: none !important;
+}
+/*edit page*/
+.edit-btn {
+    background-color: #fe424d !important;
+border: none !important;
+
+}
+
+/* show page*/
+.show img{
+    height: 30vh;
+   
+    
+}
+.image{
+    width: 100%;
+}
+.btms{
+    display: flex;
+    margin-bottom: 15px;
+}
+.show-cards{
+    padding-left: 0;
+    padding-right: 0;
+}
+/*cards border*/
+.cards{
+    border: 1px solid rgb(249, 249, 249);
+   
+}
